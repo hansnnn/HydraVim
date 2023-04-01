@@ -1,13 +1,14 @@
 local modules = {
+    'core.bootstrap',
 	'config.settings',
-	'plugins.lazy',
+    'core.lazy',
 	'config.autocmds',
 	'config.mappings',
 	'config.commands',
 	'theme.theme',
 }
 
-for i, name in pairs(modules) do
+for _, name in pairs(modules) do
 	package.loaded[name] = nil
 	require(name)
 end

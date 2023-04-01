@@ -1,0 +1,24 @@
+-- require("lazy").setup({
+--     {
+--         "williamboman/mason.nvim",
+--         "williamboman/mason-lspconfig.nvim",
+--     },
+
+    -- {
+    -- 	'goolord/alpha-nvim',
+    --         dependencies = { 'nvim-tree/nvim-web-devicons' },
+    --    cmd = "Alpha"
+    -- 	config = function()
+    -- 		require('plugins.alpha')
+    -- 	end
+    -- },
+    -- {'projekt0n/github-nvim-theme', lazy = true},
+    -- {'navarasu/onedark.nvim', lazy = true},
+    -- {'tiagovla/tokyodark.nvim', lazy = true},
+    -- {'folke/tokyonight.nvim', lazy = true},
+    -- {'ellisonleao/gruvbox.nvim', lazy = true},
+    -- {'luisiacc/gruvbox-baby', lazy = true},
+    -- {'rafamadriz/neon', lazy = true},
+    -- {'shaunsingh/nord.nvim', lazy = true},
+    -- {'rmehri01/onenord.nvim', lazy = true},
+})
