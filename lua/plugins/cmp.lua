@@ -16,9 +16,6 @@ return {
     event = {"InsertEnter"},
     keys = {":", "/", "?"},
     config = function ()
-
-
-
         local preset, cmp = pcall(require, 'cmp')
         local border = require("core.border").rouded
         local kind_icons = require("core.ui.icons").icons.kind_icons

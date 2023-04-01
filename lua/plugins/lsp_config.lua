@@ -17,7 +17,7 @@ return     {
             cmd = { "LspInstall", "LspUninstall" },
         }
     },
-    cmd = { "LspStart", "LspInfo", "LspStop"},
+    -- cmd = { "LspStart", "LspInfo", "LspStop"},
     config = function()
         local mason = require('mason')
         local mason_lspconfig = require('mason-lspconfig')
