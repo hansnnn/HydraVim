@@ -1,6 +1,7 @@
 local wk = require("which-key")
 
-wk.setup {
+local opts = { prefix = '<leader>' }
+local options = {
     plugins = {
         marks = false,
         registers = false,
@@ -25,10 +26,10 @@ wk.setup {
         group = "",
     },
     window = {
-        border = "single", -- none, single, double, shadow
+        border = "single",
         position = "bottom",
-        margin = { 1, 0, 1, 0 }, -- extra window margin [top, right, bottom, left]
-        padding = { 2, 2, 2, 2 }, -- extra window padding [top, right, bottom, left]
+        margin = { 1, 0, 1, 0 },
+        padding = { 2, 2, 2, 2 },
         winblend = 0
     },
     layout = {
@@ -75,7 +76,6 @@ local mappings = {
     e = { ":NvimTreeToggle<cr>", "פּ Tree" },
     s = { ":e ~/.config/nvim/init.lua<cr>", " Settings" },
     r = { ":Telescope live_grep<cr>", " Live Grep" },
-    -- u = { ":TermExec size=10 direction=float cmd='sh ~/.config/nvim/script/update.sh && exit'<CR>", " Update" },
     t = {
         name = " Terminal",
         t = { ":ToggleTerm<cr>", "Horizontal" },
@@ -159,5 +159,5 @@ local mappings = {
     },
 }
 
-local opts = { prefix = '<leader>' }
+wk.setup(options)
 wk.register(mappings, opts)

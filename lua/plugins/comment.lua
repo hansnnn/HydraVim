@@ -1,7 +1,6 @@
 local nvim_comment = require("nvim_comment")
 
-nvim_comment.setup
-{
+local options = {
     marker_padding = true,
     comment_empty = false,
     comment_empty_trim_whitespace = false,
@@ -11,3 +10,5 @@ nvim_comment.setup
     comment_chunk_text_object = "<leader>;",
     hook = nil
 }
+
+nvim_comment.setup(options)

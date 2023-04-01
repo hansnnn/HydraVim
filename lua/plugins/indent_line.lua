@@ -1,6 +1,6 @@
 local indent_blankline = require("indent_blankline")
 
-indent_blankline.setup {
+local options = {
     filetype_exclude = {
         "terminal",
         "lazy",
@@ -19,3 +19,5 @@ indent_blankline.setup {
     show_current_context_start = false,
     show_trailing_blankline_indent = false,
 }
+
+indent_blankline.setup(options)

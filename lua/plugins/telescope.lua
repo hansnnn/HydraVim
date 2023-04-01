@@ -2,7 +2,7 @@ local telescope = require("telescope")
 
 local actions = require('telescope.actions')
 
-telescope.setup {
+local options = {
     defaults = {
         vimgrep_arguments = {
             "rg",
@@ -67,3 +67,5 @@ telescope.setup {
         }
     }
 }
+
+telescope.setup(options)

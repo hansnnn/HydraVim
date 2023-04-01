@@ -1,6 +1,6 @@
 local toggleterm = require("toggleterm")
 
-toggleterm.setup({
+local options = {
     direction = "float",
     float_opts = {
         width = function()
@@ -10,4 +10,6 @@ toggleterm.setup({
             return math.ceil(vim.o.lines * 0.7)
         end,
     }
-})
+}
+
+toggleterm.setup(options)

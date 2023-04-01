@@ -1,6 +1,6 @@
 local bufferline = require("bufferline")
 
-bufferline.setup {
+local options = {
     options = {
         buffer_close_icon= '',
         modified_icon = '●',
@@ -28,3 +28,5 @@ bufferline.setup {
         end,
     }
 }
+
+bufferline.setup(options)

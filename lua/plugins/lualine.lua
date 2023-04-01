@@ -13,7 +13,7 @@ local function lsp_name()
     return string.format(" %s", client_name)
 end
 
-lualine.setup {
+local options = {
     options = {
         symbols = { added = ' ', modified = ' ', removed = ' ', error = ' ', warn = ' ', info = ' ', hint = ' '},
         icons_enabled = true,
@@ -54,3 +54,5 @@ lualine.setup {
     inactive_winbar = {},
     extensions = {}
 }
+
+lualine.setup(options)

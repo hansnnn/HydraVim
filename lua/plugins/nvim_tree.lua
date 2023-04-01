@@ -1,6 +1,6 @@
 local nvim_tree = require("nvim-tree")
 
-nvim_tree.setup({
+local options = {
     sort_by = "case_sensitive",
     view = {
         hide_root_folder = true,
@@ -82,4 +82,6 @@ nvim_tree.setup({
             },
         },
     },
-})
+}
+
+nvim_tree.setup(options)
